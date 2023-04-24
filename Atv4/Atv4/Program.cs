@@ -5,8 +5,10 @@ public class Program
     public static void Main(string[] args)
     {
         // Ler a altura da pessoa
-        Console.Write("Digite a altura da pessoa (em metros): ");
+        Console.Write("Digite a altura da pessoa (em centimetros): ");
         double altura = double.Parse(Console.ReadLine());
+
+        altura = altura / 100;
 
         // Ler o sexo da pessoa
         Console.Write("Digite o sexo da pessoa (M para masculino e F para feminino): ");
@@ -14,13 +16,14 @@ public class Program
 
         // Calcular o peso ideal da pessoa de acordo com o sexo
         double pesoIdeal;
-        if (char.ToLower(sexo) == 'M')
+
+        if (char.ToUpper(sexo) == 'M')
         {
-            pesoIdeal = (72.7 + altura) - 58;
+            pesoIdeal = (72.7 * altura) - 58;
         }
-        else if (char.ToLower(sexo) == 'F')
+        else if (char.ToUpper(sexo) == 'F')
         {
-            pesoIdeal = (62.1) - 44.7;
+            pesoIdeal = (62.1 * altura) - 44.7;
         }
         else
         {
