@@ -1,0 +1,4 @@
+(F) - Falso. O algoritmo Insertion Sort tem complexidade O(n^2) no pior caso.
+(V) - Verdadeiro. O algoritmo Insertion Sort tem um bom desempenho em listas com poucos elementos, mas seu tempo de execução aumenta significativamente em listas maiores.
+(V) - Verdadeiro. O algoritmo Insertion Sort funciona selecionando um elemento por vez e comparando-o com os elementos anteriores, movendo-o para a posição correta.
+(V) - Verdadeiro. O algoritmo Insertion Sort é in-place, o que significa que ele ordena o vetor original sem a necessidade de criar um novo vetor.
